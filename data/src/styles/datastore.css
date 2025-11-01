@@ -1,0 +1,455 @@
+/* Datastore Request Form Styles */
+.datastore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.datastore-card {
+  width: 340px !important;
+  height: 462px !important;
+  left: 2px;
+  border-radius: 15px !important;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+  background-color: #F1F8FE !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  border: 2px solid #F1F8FE !important;
+}
+
+.datastore1-card {
+  width: 340px !important;
+  height: 462px !important;
+  left: 2px;
+  border-radius: 15px !important;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+  background-color: #F1F8FE !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  border: 2px solid #F1F8FE !important;
+}
+
+.datastore-content {
+  padding: 24px !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Header Styles */
+.datastore-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  padding: 0;
+  gap: 8px;
+}
+
+.datastore-icon {
+  width: 14px !important;
+  height: 13.940171241760254px !important;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+  margin-right: 8px !important;
+}
+
+.datastore-title {
+  font-family: 'Samsung InterFace', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  letter-spacing: 0px !important;
+  text-transform: uppercase !important;
+  color: #333 !important;
+  margin: 0 !important;
+  margin-left: -12px !important;
+}
+
+/* Stepper Styles */
+.datastore-stepper {
+  margin-bottom: 18px;
+  position: relative;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.datastore-stepper::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -65px;
+  right: -65px;
+  height: 1px;
+  border-bottom: 2px dashed #ccc;
+  width: calc(100% + 130px);
+}
+
+.step-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2196F3;
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.step-icon.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.step-icon.completed {
+  background-color: #2196F3;
+  color: white;
+}
+
+.active-indicator-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.step-label {
+  color: #282828 !important;
+  font-family: "Samsung InterFace" !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 23px !important;
+  letter-spacing: 0.5px !important;
+  margin-top: -8px !important;
+  padding: 0 2px !important;
+  text-align: center !important;
+}
+
+.step-label.it-team {
+  font-weight: 400 !important;
+}
+
+/* Form Section Styles */
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section.datastore-path-section {
+  margin-top: -10px;
+}
+
+/* Removed first-of-type margin since stepper margin is reduced */
+
+.section-title {
+  font-family: 'Samsung InterFace', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: bold !important;
+  font-size: 14px !important;
+  line-height: 145% !important;
+  letter-spacing: 0% !important;
+  color: #333 !important;
+  margin-bottom: 8px !important;
+  text-align: left !important;
+}
+
+/* Access Type Styles */
+.access-type-group {
+  gap: 32px;
+  margin-bottom: 4px;
+  margin-top: -8px;
+  align-items: center !important;
+}
+
+.radio-button {
+  color: #2196F3 !important;
+}
+
+.radio-button.Mui-checked {
+  color: #2196F3 !important;
+}
+
+.radio-label {
+  font-size: 14px !important;
+}
+
+.radio-label .MuiFormControlLabel-label {
+  color: #333 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  margin-left: 0px !important;
+  line-height: 1.2 !important;
+}
+
+.radio-label.read-write .MuiFormControlLabel-label {
+  color: #6E6E6E !important;
+  font-family: "Samsung InterFace" !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 145% !important; /* 20.3px */
+}
+
+.radio-label.read-write .MuiRadio-root {
+  color: #A9A8AA !important;
+}
+
+.radio-label.read-write .MuiRadio-root.Mui-checked {
+  color: #A9A8AA !important;
+}
+
+/* Path Input Styles */
+.path-input-container {
+  position: relative;
+}
+
+.path-input .MuiOutlinedInput-root {
+  width: 292px !important;
+  height: 45px !important;
+  border-radius: 6px !important;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+  background: #FFF !important;
+  box-shadow: 0 1px 1px 0 rgba(5, 32, 81, 0.05) !important;
+}
+
+.path-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #006FFD !important;
+}
+
+.path-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #006FFD !important;
+}
+
+.path-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px solid #006FFD !important;
+}
+
+.path-input .MuiInputBase-input {
+  color: var(--Grey-900, #101928) !important;
+  font-family: "Samsung InterFace" !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 145% !important;
+  text-align: left !important;
+  vertical-align: middle !important;
+  padding-left: 15px !important;
+}
+
+.attach-button {
+  color: #666 !important;
+  padding: 8px !important;
+}
+
+.attach-button:hover {
+  background-color: rgba(33, 150, 243, 0.1) !important;
+  color: #2196F3 !important;
+}
+
+/* Justification Input Styles */
+.justification-input .MuiOutlinedInput-root {
+  width: 292px !important;
+  height: 60px !important;
+  border-radius: 6px !important;
+  gap: 8px !important;
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+  background: #FFF !important;
+  box-shadow: 0 1px 1px 0 rgba(5, 32, 81, 0.05) !important;
+  align-items: flex-start !important;
+}
+
+.justification-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #F3F3F3 !important;
+}
+
+/* Hover effect removed for justification input */
+
+.justification-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #F3F3F3 !important;
+}
+
+.justification-input .MuiInputBase-input {
+  font-size: 14px !important;
+  color: #666 !important;
+  padding-top: 12px !important;
+  padding-right: 14px !important;
+  padding-bottom: 12px !important;
+  padding-left: 14px !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  line-height: 1.4 !important;
+  resize: none !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.justification-input .MuiInputBase-input::placeholder {
+  color: #333 !important;
+  font-family: "Samsung InterFace" !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  opacity: 1 !important;
+  text-align: left !important;
+  vertical-align: top !important;
+}
+
+/* Additional styling for proper text alignment */
+.justification-input .MuiInputBase-root {
+  align-items: flex-start !important;
+  padding: 0 !important;
+}
+
+.justification-input .MuiInputBase-inputMultiline {
+  padding: 12px 14px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  align-self: flex-start !important;
+}
+
+.justification-input .MuiOutlinedInput-input {
+  padding: 12px 14px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.justification-input textarea {
+  padding: 12px 14px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  resize: none !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cancel-button {
+  width: 140px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+  padding: 10px 16px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border: 2px solid #2196F3 !important;
+  color: #666 !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  background-color: white !important;
+}
+
+
+
+.submit-button {
+  width: 140px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  opacity: 1 !important;
+  background-color: #2196F3 !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  box-shadow: none !important;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .datastore-container {
+    padding: 16px;
+  }
+  
+  .datastore-content {
+    padding: 24px !important;
+  }
+  
+  .datastore-title {
+    font-size: 18px !important;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .cancel-button,
+  .submit-button {
+    width: 100% !important;
+  }
+}
+
+/* Custom Stepper Connector - Force Update */
+.datastore-stepper .MuiStepConnector-line,
+.MuiStepConnector-line {
+  border-color: #2196F3 !important;
+  border-top-width: 3px !important;
+  position: relative !important;
+  top: -6px !important;
+  left: -30px !important;
+  width: 40px !important;
+  max-width: 40px !important;
+  margin: 0 2px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+/* Only change the second and third horizontal lines */
+.datastore-stepper .MuiStep-root:nth-child(3) .MuiStepConnector-line,
+.datastore-stepper .MuiStep-root:nth-child(5) .MuiStepConnector-line {
+  border-color: #B9B9C3 !important;
+  background: #B9B9C3 !important;
+}
+
+.MuiStepConnector-root.Mui-active .MuiStepConnector-line,
+.MuiStepConnector-root.Mui-completed .MuiStepConnector-line {
+  border-color: #2196F3 !important;
+  width: 40px !important;
+  max-width: 40px !important;
+  margin: 0 2px !important;
+  position: relative !important;
+  top: -6px !important;
+  left: -30px !important;
+}
+
+/* Custom Step Icon Positioning */
+.MuiStep-root .MuiStepLabel-root {
+  flex-direction: column;
+}
+
+.MuiStepLabel-iconContainer {
+  padding-right: 0 !important;
+  margin-bottom: 0px;
+}
+
+.MuiStepLabel-labelContainer {
+  width: auto !important;
+  padding: 0 1px !important;
+}
+
+.MuiStep-root {
+  padding: 0 !important;
+  margin: 0 10px !important;
+}
