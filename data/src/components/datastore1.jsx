@@ -20,6 +20,7 @@ import {
 import Group3Icon from '../assets/icons/Group (3).svg';
 import ActiveIndicatorIcon from '../assets/icons/Active indicator.svg';
 import Icon6 from '../assets/icons/icon (6).svg';
+import Icon8 from '../assets/icons/icon (8).svg';
 import '../styles/datastore.css';
 
 const DatastoreRequest = () => {
@@ -91,7 +92,13 @@ const DatastoreRequest = () => {
               >
                 <FormControlLabel
                   value="read"
-                  control={<Radio className="radio-button" />}
+                  control={
+                    <Radio 
+                      className="radio-button"
+                      icon={<img src={Icon8} alt="" className="custom-radio-icon" />}
+                      checkedIcon={<img src={Icon8} alt="" className="custom-radio-icon" />}
+                    />
+                  }
                   label="Read"
                   className="radio-label"
                 />

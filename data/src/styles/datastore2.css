@@ -403,7 +403,7 @@
   padding: 10px 16px !important;
   border-width: 1px !important;
   border-style: solid !important;
-  border: 2px solid #2196F3 !important;
+  border: 1px solid #38AEE0 !important;
   color: #666 !important;
   font-weight: 600 !important;
   text-transform: none !important;
@@ -418,7 +418,8 @@
   height: 44px !important;
   border-radius: 8px !important;
   opacity: 1 !important;
-  background-color: #2196F3 !important;
+  background-color: #38AEE0 !important;
+  border: 1px solid #38AEE0 !important;
   color: white !important;
   font-weight: 600 !important;
   text-transform: none !important;
